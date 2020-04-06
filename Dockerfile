@@ -63,7 +63,7 @@ RUN mkdir -p /root/.ssh && \
 RUN echo 'root:root' | chpasswd
 
 # Install some bare minimal Ansible items
-run apt-get -y install apt-transport-https python-minimal
+run apt-get -y install apt-transport-https python3-minimal
 
 # Add environment to allow things like PIP to work
 ENV LANG C
